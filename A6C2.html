@@ -1,0 +1,33 @@
+<!DOCTYPEN html>
+
+<html>
+<head>
+<audio src="bird (1).mp3" id="Audio"></audio>
+</head>
+<body>
+    <center>
+        <br>
+        <p>Bird</p>
+<video src="birds.mp4" id="Video" width="400"></video><br>
+<script>
+    function MyPlay(){
+        document.getElementById("Video").play();
+        document.getElementById("Audio").play();
+
+    }
+
+    function MyStop(){
+        document.getElementById("Video").pause();
+        document.getElementById("Video").currentTime=0;
+        document.getElementById("Audio").pause();
+        document.getElementById("Audio").currentTime=0;
+    }
+</script>
+<br>
+
+<button onclick="MyPlay()">Play</button>
+<button onclick="MyStop()">Stop</button>
+
+</center>
+</body>
+</html>
